@@ -1,9 +1,9 @@
-import { Button } from '@/components/common/Button';
+import { HeroSection } from '@/components/layout/HeroSextion';
 
 export default function Home() {
   return (
     <main>
-      <Button text={'Customize Your Outfit'} />
+      <HeroSection />
     </main>
   );
 }

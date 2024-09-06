@@ -44,7 +44,6 @@ module.exports = {
           'error',
           process.platform === 'win32' ? 'windows' : 'unix',
         ],
-        'import/no-default-export': ['warn'],
         'import/no-cycle': ['warn'],
         'import/prefer-default-export': 'off',
         semi: ['error', 'always'],
