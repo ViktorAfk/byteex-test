@@ -7,6 +7,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 20s linear 0s infinite',
+      },
+      keyframes: {
+        scroll: {
+          to: { transform: 'translateX(-50%)' },
+        },
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         inter: ['Inter', 'serif'],
@@ -15,6 +23,14 @@ const config: Config = {
         card: '0px 3px 10px 0px #00000014',
       },
       fontSize: {
+        xxs: [
+          '0.69rem',
+          {
+            lineHeight: '35px',
+            letterSpacing: '0.88px',
+            fontWeight: 400,
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
@@ -31,6 +47,7 @@ const config: Config = {
         iconBackground: '#F9F0E5',
         star: '#FFB801',
         borderColor: '#EDEDED',
+        banner: '#565656',
       },
       height: {
         33: '132px',
