@@ -20,6 +20,10 @@ const config: Config = {
       },
       lineHeight: {
         header: '45px',
+        mobile: '34px',
+      },
+      padding: {
+        bottom: '86px',
       },
       colors: {
         primary: '#01005B',
@@ -27,6 +31,9 @@ const config: Config = {
         iconBackground: '#F9F0E5',
         star: '#FFB801',
         borderColor: '#EDEDED',
+      },
+      height: {
+        33: '132px',
       },
       width: {
         89: '356px',
@@ -38,10 +45,9 @@ const config: Config = {
       container: {
         center: true,
         padding: {
+          DEFAULT: '1rem',
           sm: '1rem',
           md: '2rem',
-          lg: '3rem',
-          xl: '5rem',
         },
       },
       backgroundImage: {
@@ -59,4 +65,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

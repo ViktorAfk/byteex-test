@@ -6,7 +6,7 @@ export default async function HeroInfo() {
   const { data: advantages } = await getStrapiData('/api/hero-advantages');
 
   return (
-    <div className={'mb-10 flex flex-col gap-5'}>
+    <div className={'flex flex-col gap-6 mb-7 lg:gap-5 lg:mb-10'}>
       {advantages.map(({ id, attributes: { description, icon } }) => {
         const {
           data: {
@@ -15,7 +15,7 @@ export default async function HeroInfo() {
         } = icon;
 
         return (
-          <div className={'flex gap-2 items-center'} key={id}>
+          <div className={'flex gap-3 items-center px-8 lg:px-2'} key={id}>
             <div
               className={
                 'w-8 h-8 flex justify-center items-center basis-8 bg-iconBackground rounded-full'
@@ -30,7 +30,7 @@ export default async function HeroInfo() {
             </div>
             <p
               className={
-                'flex-1 font-montserrat text-medium text-secondary leading-6 tracking-wider'
+                'flex-1 font-montserrat text-xs text-secondary leading-6 tracking-wider lg:text-medium'
               }
             >
               {description}

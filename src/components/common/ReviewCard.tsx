@@ -13,13 +13,14 @@ export default async function ReviewCard() {
 
   const {
     data: {
-      attributes: { name: imageName, width, height, url },
+      attributes: { name: imageName, url },
     },
   } = userIcon;
+
   return (
     <article
       className={
-        'absolute bottom-0 translate-y-1/2 p-4 w-104 shadow-card border border-borderColor rounded-lg'
+        'absolute bottom-0 translate-y-1/2 h-33 p-4 w-104 shadow-card border bg-white border-borderColor rounded-lg xl:h-44'
       }
     >
       <div className={'flex gap-3 mb-3 items-center w-full'}>
@@ -29,25 +30,29 @@ export default async function ReviewCard() {
           src={`${baseUrl}${url}`}
           alt={imageName}
         />
-        <div className={'flex gap-3'}>
+        <div className={'flex flex-col-reverse lg:flex-row lg:gap-3'}>
           <p
             className={
-              'font-montserrat text-secondary text-medium leading-6 tracking-wider'
+              'font-montserrat text-secondary text-medium leading-6 tracking-wider text-clip'
             }
           >
             {userName}
           </p>
-          <div className="flex gap-1 items-center">
+          <div className={'flex gap-1 items-center'}>
             <Rate rate={rate} />
             <p className={'text-xs text-secondary'}>{additionalInfo}</p>
           </div>
         </div>
       </div>
-      <p
-        className={'text-xs text-secondary font-inter tracking-wider leading-6'}
-      >
-        {description}
-      </p>
+      <div>
+        <p
+          className={
+            'text-xs text-secondary overflow-y-hidden line-clamp-2 font-inter tracking-wider leading-6 h-full xl:line-clamp-5'
+          }
+        >
+          {description}
+        </p>
+      </div>
     </article>
   );
 }
