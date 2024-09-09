@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -7,9 +7,40 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ['Montserrat', 'sans-serif'],
+        inter: ['Inter', 'serif'],
+      },
+      boxShadow: {
+        card: '0px 3px 10px 0px #00000014',
+      },
+      fontSize: {
+        header: '38px',
+        medium: '15px',
+      },
+      lineHeight: {
+        header: '45px',
+        mobile: '34px',
+      },
+      padding: {
+        bottom: '86px',
+      },
       colors: {
         primary: '#01005B',
         secondary: '#676869',
+        iconBackground: '#F9F0E5',
+        star: '#FFB801',
+        borderColor: '#EDEDED',
+      },
+      height: {
+        33: '132px',
+      },
+      width: {
+        89: '356px',
+        104: '416px',
+      },
+      borderRadius: {
+        button: '5px',
       },
       container: {
         center: true,
@@ -17,8 +48,6 @@ const config: Config = {
           DEFAULT: '1rem',
           sm: '1rem',
           md: '2rem',
-          lg: '3rem',
-          xl: '5rem',
         },
       },
       backgroundImage: {
@@ -28,12 +57,13 @@ const config: Config = {
       },
     },
     screens: {
-      sm: '428px',
+      sm: '425px',
       md: '744px',
       lg: '1024px',
       xl: '1440px',
     },
   },
   plugins: [],
-}
-export default config
+};
+
+export default config;
