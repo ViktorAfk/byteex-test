@@ -11,7 +11,7 @@ export default async function Banners() {
   const arrayMiddle = mixedArray.length / 2;
 
   return (
-    <div className={'flex w-full animate-scroll'}>
+    <div className={'flex max-v-max animate-scroll px-4'}>
       {mixedArray.map(({ id, attributes }, index) => (
         <Fragment key={id}>
           <p
