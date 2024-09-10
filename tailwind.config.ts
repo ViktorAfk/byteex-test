@@ -7,6 +7,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        scroll: 'scroll 20s linear 0s infinite',
+      },
+      keyframes: {
+        scroll: {
+          to: { transform: 'translateX(-50%)' },
+        },
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         inter: ['Inter', 'serif'],
@@ -15,6 +23,14 @@ const config: Config = {
         card: '0px 3px 10px 0px #00000014',
       },
       fontSize: {
+        xxs: [
+          '0.69rem',
+          {
+            lineHeight: '35px',
+            letterSpacing: '0.88px',
+            fontWeight: 400,
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
@@ -31,6 +47,7 @@ const config: Config = {
         iconBackground: '#F9F0E5',
         star: '#FFB801',
         borderColor: '#EDEDED',
+        banner: '#565656',
       },
       height: {
         33: '132px',
@@ -51,9 +68,8 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-wave':
+          'linear-gradient(180deg, #F9F0E5 -7.8%, rgba(249, 240, 229, 0.18) 38.6%, rgba(249, 240, 229, 0.00) 100%);',
       },
     },
     screens: {

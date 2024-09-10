@@ -38,3 +38,13 @@ export interface HeroReview {
     userIcon: Icon;
   };
 }
+
+export interface Banner {
+  id: number;
+  attributes: {
+    benefit: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+  };
+}
