@@ -1,4 +1,5 @@
 import { AsSeenIn } from '../common/AsSeenIn';
+import LongueWearContainer from '../common/Container/LongueWearContainer';
 import { Title } from '../common/Title';
 
 export const TopBenefits = () => {
@@ -7,8 +8,16 @@ export const TopBenefits = () => {
       <div className={'container'}>
         <AsSeenIn />
         <div>
-          <Title tag={'h2'}>{'Loungewear you can be proud of.'}</Title>
+          <Title
+            className={
+              'font-montserrat text-center text-primary text-h2-mobile lg:text-h2'
+            }
+            tag={'h2'}
+          >
+            {'Loungewear you can be proud of.'}
+          </Title>
         </div>
+        <LongueWearContainer />
       </div>
     </section>
   );

@@ -48,3 +48,14 @@ export interface Banner {
     publishedAt: string;
   };
 }
+
+export interface LoungeWear {
+  id: number;
+  attributes: {
+    name: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    picture: Icon;
+  };
+}
