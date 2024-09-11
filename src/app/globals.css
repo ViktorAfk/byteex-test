@@ -14,3 +14,47 @@
  
   }
 }
+
+@layer components {
+  .benefits {
+    background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+  }
+
+  .wave {
+    clip-path: path('M428.984 595H0.851503V40.2019C-30.3144 24.1735 0.851503 0.0957745 0.851503 0.0957745V40.2019C16.4005 48.1987 47.4648 54.192 105.655 54.192C280.481 54.192 323.604 -2.64047 429.136 0.0957216C534.669 2.83191 428.984 595 428.984 595Z');
+  }
+
+  .embla {
+    max-width: 48rem;
+    margin: auto;
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .embla__slide {
+    flex: 0 0 33%;
+    min-width: fit-content;
+  }
+
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .embla-dot {
+    background-color: black;
+    &--active {
+      background-color: black;
+    }
+  }
+}

@@ -8,7 +8,7 @@ import { Title } from '../common/Title';
 
 export const HeroSection: React.FC = () => {
   return (
-    <div className={''}>
+    <section>
       <div
         className={
           'container relative pt-8 pb-bottom lg:pr-10 lg:pl-20 xl:pr-14 xl:pl-24 xl:pb-14'
@@ -46,6 +46,6 @@ export const HeroSection: React.FC = () => {
         </div>
         <ReviewCard />
       </div>
-    </div>
+    </section>
   );
 };

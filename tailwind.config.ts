@@ -31,6 +31,70 @@ const config: Config = {
             fontWeight: 400,
           },
         ],
+        'h2-mobile': [
+          '1.625rem',
+          {
+            lineHeight: '34px',
+            letterSpacing: '1.04px',
+            fontWeight: 400,
+          },
+        ],
+        h2: [
+          '2rem',
+          {
+            lineHeight: '40px',
+            letterSpacing: '1.28px',
+            fontWeight: 400,
+          },
+        ],
+        'h3-mobile': [
+          '1.25rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.8px',
+            fontWeight: 400,
+          },
+        ],
+        h3: [
+          '1.375rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.88px',
+            fontWeight: 400,
+          },
+        ],
+        description: [
+          '1.25rem',
+          {
+            lineHeight: '23px',
+            letterSpacing: '0.6px',
+            fontWeight: 400,
+          },
+        ],
+        'description-sm': [
+          '0.875',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.42px',
+            fontWeight: 400,
+          },
+        ],
+        textSeenIn: [
+          '0.9375',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.45px',
+            fontWeight: 400,
+          },
+        ],
+        'textSeenIn-sm': [
+          '0.9375',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.45px',
+            fontWeight: 400,
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
@@ -39,7 +103,10 @@ const config: Config = {
         mobile: '34px',
       },
       padding: {
+        13: '52px',
+        19: '76px',
         bottom: '86px',
+        23: '92px',
       },
       colors: {
         primary: '#01005B',
@@ -48,6 +115,8 @@ const config: Config = {
         star: '#FFB801',
         borderColor: '#EDEDED',
         banner: '#565656',
+        'seen-in': '#868787',
+        dot: '#C4C4C4',
       },
       height: {
         33: '132px',
@@ -67,12 +136,9 @@ const config: Config = {
           md: '2rem',
         },
       },
-      backgroundImage: {
-        'gradient-wave':
-          'linear-gradient(180deg, #F9F0E5 -7.8%, rgba(249, 240, 229, 0.18) 38.6%, rgba(249, 240, 229, 0.00) 100%);',
-      },
     },
     screens: {
+      'max-sm': { min: '320px', max: '450px' },
       sm: '425px',
       md: '744px',
       lg: '1024px',
