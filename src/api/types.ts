@@ -59,3 +59,27 @@ export interface LoungeWear {
     picture: Icon;
   };
 }
+
+export interface LoungeWearAdvantages {
+  id: number;
+  attributes: {
+    title: string;
+    description: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    advantageIcon: Icon;
+  };
+}
+
+export interface OrderRule {
+  id: number;
+  attributes: {
+    orderTitle: string;
+    information: string;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+    orderIcon: Icon;
+  };
+}

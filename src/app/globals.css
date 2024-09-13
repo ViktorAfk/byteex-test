@@ -21,11 +21,13 @@
   }
 
   .wave {
-    clip-path: path('M428.984 595H0.851503V40.2019C-30.3144 24.1735 0.851503 0.0957745 0.851503 0.0957745V40.2019C16.4005 48.1987 47.4648 54.192 105.655 54.192C280.481 54.192 323.604 -2.64047 429.136 0.0957216C534.669 2.83191 428.984 595 428.984 595Z');
+    background-image: url('/Vector\ 88\ \(1\).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .embla {
-    max-width: 48rem;
+    max-width: 40rem;
     margin: auto;
   }
 
@@ -50,4 +52,4 @@
     align-items: center;
     gap: 0.5rem;
   }
-}
+} 

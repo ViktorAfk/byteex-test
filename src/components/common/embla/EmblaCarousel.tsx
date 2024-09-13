@@ -21,7 +21,7 @@ export const EmblaCarousel: React.FC<Props> = ({ images }) => {
         <div className={'embla__container lg:justify-between lg:h-fit lg:g-0'}>
           {images.map(({ id, url, width, height, description }) => (
             <Image
-              className={'embla__slide lg:flex-none'}
+              className={'embla__slide basis-1/3 lg:flex-none'}
               tabIndex={0}
               key={id}
               src={url}
@@ -41,7 +41,7 @@ export const EmblaCarousel: React.FC<Props> = ({ images }) => {
                 key={snap}
                 onClick={() => onDotButtonClick(index)}
                 className={clsx('w-2 h-2 rounded-full bg-dot', {
-                  'bg-black': index === selectedIndex,
+                  '!bg-black': index === selectedIndex,
                 })}
               />
             );

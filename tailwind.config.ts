@@ -64,15 +64,15 @@ const config: Config = {
           },
         ],
         description: [
-          '1.25rem',
+          '0.94rem',
           {
             lineHeight: '23px',
-            letterSpacing: '0.6px',
+            letterSpacing: '0.45px',
             fontWeight: 400,
           },
         ],
         'description-sm': [
-          '0.875',
+          '0.88rem',
           {
             lineHeight: '18px',
             letterSpacing: '0.42px',
@@ -95,6 +95,14 @@ const config: Config = {
             fontWeight: 400,
           },
         ],
+        imageHeader: [
+          '13px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0.39px',
+            fontWeight: 400,
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
@@ -108,6 +116,9 @@ const config: Config = {
         bottom: '86px',
         23: '92px',
       },
+      margin: {
+        18: '72px',
+      },
       colors: {
         primary: '#01005B',
         secondary: '#676869',
@@ -117,6 +128,8 @@ const config: Config = {
         banner: '#565656',
         'seen-in': '#868787',
         dot: '#C4C4C4',
+        'connection-bg': '#F0EEEF',
+        connection: '#6C6C6C',
       },
       height: {
         33: '132px',
@@ -138,7 +151,6 @@ const config: Config = {
       },
     },
     screens: {
-      'max-sm': { min: '320px', max: '450px' },
       sm: '425px',
       md: '744px',
       lg: '1024px',

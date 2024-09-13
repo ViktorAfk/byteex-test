@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import type { EmblaCarouselType } from 'embla-carousel';
 import React, {
   ComponentPropsWithRef,
@@ -51,12 +52,16 @@ export const usePrevNextButtons = (
 
 type PropType = ComponentPropsWithRef<'button'>;
 
-export const PrevButton: React.FC<PropType> = (props) => {
-  const { children, ...restProps } = props;
-
+export const PrevButton: React.FC<PropType> = ({
+  children,
+  disabled = false,
+  ...restProps
+}) => {
   return (
     <button
-      className={'embla__button embla__button--prev'}
+      className={clsx('active:translate-x-px active:translate-y-px', {
+        'opacity-50 pointer-events-none': disabled,
+      })}
       type={'button'}
       {...restProps}
     >
@@ -71,9 +76,9 @@ export const PrevButton: React.FC<PropType> = (props) => {
         <path
           d={'M11.4651 22.9255L1.00009 12.4634L11.4651 2.00006'}
           stroke={'#676869'}
-          stroke-width={'2'}
-          stroke-linecap={'square'}
-          stroke-linejoin={'round'}
+          strokeWidth={'2'}
+          strokeLinecap={'square'}
+          strokeLinejoin={'round'}
         />
       </svg>
       {children}
@@ -81,12 +86,17 @@ export const PrevButton: React.FC<PropType> = (props) => {
   );
 };
 
-export const NextButton: React.FC<PropType> = (props) => {
-  const { children, ...restProps } = props;
-
+export const NextButton: React.FC<PropType> = ({
+  disabled = false,
+  children,
+  ...restProps
+}) => {
   return (
     <button
-      className={'embla__button embla__button--next'}
+      disabled={disabled}
+      className={clsx('active:translate-x-px active:translate-y-px', {
+        'opacity-50 pointer-events-none': disabled,
+      })}
       type={'button'}
       {...restProps}
     >
@@ -101,9 +111,9 @@ export const NextButton: React.FC<PropType> = (props) => {
         <path
           d={'M2 22.9255L12.465 12.4634L2 2.00006'}
           stroke={'#676869'}
-          stroke-width={'2'}
-          stroke-linecap={'square'}
-          stroke-linejoin={'round'}
+          strokeWidth={'2'}
+          strokeLinecap={'square'}
+          strokeLinejoin={'round'}
         />
       </svg>
       {children}
