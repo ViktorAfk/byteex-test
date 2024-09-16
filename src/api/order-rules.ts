@@ -4,7 +4,7 @@ import { ApiResponse, OrderRule } from './types';
 
 export const OrderRulesReviewQuery = qs.stringify({
   populate: {
-    picture: {
+    orderIcon: {
       fields: ['width', 'height', 'url', 'name'],
     },
   },

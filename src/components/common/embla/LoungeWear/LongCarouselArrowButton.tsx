@@ -50,17 +50,19 @@ export const usePrevNextButtons = (
   };
 };
 
-type PropType = ComponentPropsWithRef<'button'>;
+type PropType = ComponentPropsWithRef<'button'> & { isHidden?: boolean };
 
 export const PrevButton: React.FC<PropType> = ({
   children,
   disabled = false,
+  isHidden = false,
   ...restProps
 }) => {
   return (
     <button
       className={clsx('active:translate-x-px active:translate-y-px', {
         'opacity-50 pointer-events-none': disabled,
+        'xl:hidden': isHidden,
       })}
       type={'button'}
       {...restProps}
@@ -89,6 +91,7 @@ export const PrevButton: React.FC<PropType> = ({
 export const NextButton: React.FC<PropType> = ({
   disabled = false,
   children,
+  isHidden,
   ...restProps
 }) => {
   return (
@@ -96,6 +99,7 @@ export const NextButton: React.FC<PropType> = ({
       disabled={disabled}
       className={clsx('active:translate-x-px active:translate-y-px', {
         'opacity-50 pointer-events-none': disabled,
+        'xl:hidden': isHidden,
       })}
       type={'button'}
       {...restProps}

@@ -21,6 +21,7 @@ const config: Config = {
       },
       boxShadow: {
         card: '0px 3px 10px 0px #00000014',
+        order: '0px 3px 10px 1px rgba(0, 0, 0, 0.08);',
       },
       fontSize: {
         xxs: [
@@ -112,6 +113,8 @@ const config: Config = {
       },
       padding: {
         13: '52px',
+        15: '60px',
+        18: '72px',
         19: '76px',
         bottom: '86px',
         23: '92px',

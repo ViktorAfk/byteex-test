@@ -5,6 +5,7 @@ import React from 'react';
 import { Title } from './Title';
 
 type Props = {
+  classes?: string;
   isOdd?: boolean;
   width: number;
   height: number;
@@ -13,7 +14,6 @@ type Props = {
   orderTitle: string;
   orderInfo: string;
 };
-// /api/order-rules
 
 export const OrderCard: React.FC<Props> = ({
   isOdd = false,
@@ -27,9 +27,9 @@ export const OrderCard: React.FC<Props> = ({
   return (
     <article
       className={clsx(
-        'flex h-[321px] w-[346px] flex-col items-center gap-[0.875rem] rounded-lg bg-connection',
+        'flex h-72 w-72 border border-borderColor,  px-8 flex-col items-center justify-center gap-[0.875rem] rounded-lg bg-[#F9F0E6] lg:px-9 lg:w-[321px] lg:h-[346px]',
         {
-          'bg-[F9F0E6]': isOdd,
+          '!bg-[#F0EEEF] !shadow-order': isOdd,
         },
       )}
     >
@@ -41,11 +41,17 @@ export const OrderCard: React.FC<Props> = ({
       />
       <Title
         tag={'h3'}
-        className={'font-montserrat text-primary text-h3-mobile lg:text-h3'}
+        className={
+          'font-montserrat text-primary text-center text-h3-mobile lg:text-h3'
+        }
       >
         {orderTitle}
       </Title>
-      <p className={'font-montserrat text-secondary text-description'}>
+      <p
+        className={
+          'font-montserrat text-secondary text-center text-description'
+        }
+      >
         {orderInfo}
       </p>
     </article>
