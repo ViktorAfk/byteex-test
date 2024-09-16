@@ -21,6 +21,7 @@ const config: Config = {
       },
       boxShadow: {
         card: '0px 3px 10px 0px #00000014',
+        order: '0px 3px 10px 1px rgba(0, 0, 0, 0.08);',
       },
       fontSize: {
         xxs: [
@@ -28,6 +29,78 @@ const config: Config = {
           {
             lineHeight: '35px',
             letterSpacing: '0.88px',
+            fontWeight: 400,
+          },
+        ],
+        'h2-mobile': [
+          '1.625rem',
+          {
+            lineHeight: '34px',
+            letterSpacing: '1.04px',
+            fontWeight: 400,
+          },
+        ],
+        h2: [
+          '2rem',
+          {
+            lineHeight: '40px',
+            letterSpacing: '1.28px',
+            fontWeight: 400,
+          },
+        ],
+        'h3-mobile': [
+          '1.25rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.8px',
+            fontWeight: 400,
+          },
+        ],
+        h3: [
+          '1.375rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.88px',
+            fontWeight: 400,
+          },
+        ],
+        description: [
+          '0.94rem',
+          {
+            lineHeight: '23px',
+            letterSpacing: '0.45px',
+            fontWeight: 400,
+          },
+        ],
+        'description-sm': [
+          '0.88rem',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.42px',
+            fontWeight: 400,
+          },
+        ],
+        textSeenIn: [
+          '0.9375',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.45px',
+            fontWeight: 400,
+          },
+        ],
+        'textSeenIn-sm': [
+          '0.9375',
+          {
+            lineHeight: '18px',
+            letterSpacing: '0.45px',
+            fontWeight: 400,
+          },
+        ],
+        imageHeader: [
+          '13px',
+          {
+            lineHeight: '22px',
+            letterSpacing: '0.39px',
             fontWeight: 400,
           },
         ],
@@ -39,7 +112,15 @@ const config: Config = {
         mobile: '34px',
       },
       padding: {
+        13: '52px',
+        15: '60px',
+        18: '72px',
+        19: '76px',
         bottom: '86px',
+        23: '92px',
+      },
+      margin: {
+        18: '72px',
       },
       colors: {
         primary: '#01005B',
@@ -48,6 +129,10 @@ const config: Config = {
         star: '#FFB801',
         borderColor: '#EDEDED',
         banner: '#565656',
+        'seen-in': '#868787',
+        dot: '#C4C4C4',
+        'connection-bg': '#F0EEEF',
+        connection: '#6C6C6C',
       },
       height: {
         33: '132px',
@@ -66,10 +151,6 @@ const config: Config = {
           sm: '1rem',
           md: '2rem',
         },
-      },
-      backgroundImage: {
-        'gradient-wave':
-          'linear-gradient(180deg, #F9F0E5 -7.8%, rgba(249, 240, 229, 0.18) 38.6%, rgba(249, 240, 229, 0.00) 100%);',
       },
     },
     screens: {

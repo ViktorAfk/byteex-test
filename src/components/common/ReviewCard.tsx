@@ -20,7 +20,7 @@ export default async function ReviewCard() {
   return (
     <article
       className={
-        ' absolute bottom-0 w-96 translate-y-1/2 h-33 p-4 lg:w-104 shadow-card border bg-white border-borderColor rounded-lg xl:h-44'
+        ' absolute bottom-0 z-40 w-96 translate-y-1/2 h-33 p-4 lg:w-104 shadow-card border bg-white border-borderColor rounded-lg xl:h-44'
       }
     >
       <div className={'flex gap-3 mb-3 items-center w-full'}>

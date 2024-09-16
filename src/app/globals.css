@@ -14,3 +14,42 @@
  
   }
 }
+
+@layer components {
+  .benefits {
+    background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+  }
+
+  .wave {
+    background-image: url('/Vector\ 88\ \(1\).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .embla {
+    max-width: 40rem;
+    margin: auto;
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: fit-content;
+  }
+
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 
