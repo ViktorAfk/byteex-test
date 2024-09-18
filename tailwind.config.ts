@@ -9,10 +9,21 @@ const config: Config = {
     extend: {
       animation: {
         scroll: 'scroll 20s linear 0s infinite',
+        fadeInDown: 'fadeInDown 1s ease-out',
       },
       keyframes: {
         scroll: {
           to: { transform: 'translateX(-50%)' },
+        },
+        fadeInDown: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate3d(0, -100%, 0)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'none',
+          },
         },
       },
       fontFamily: {
@@ -104,12 +115,31 @@ const config: Config = {
             fontWeight: 400,
           },
         ],
+        summary: [
+          '1.125rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.64px',
+            fontWeight: 400,
+          },
+        ],
+        answer: [
+          '0.94rem',
+          {
+            lineHeight: '22px',
+            fontWeight: 400,
+            letterSpacing: '0.48px',
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
       lineHeight: {
         header: '45px',
         mobile: '34px',
+      },
+      gap: {
+        22: '88px',
       },
       padding: {
         13: '52px',

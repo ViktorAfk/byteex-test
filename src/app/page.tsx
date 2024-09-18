@@ -1,4 +1,5 @@
 import { Connection } from '@/components/layout/Connection';
+import { Faq } from '@/components/layout/Faq';
 import { HeroSection } from '@/components/layout/HeroSection';
 import { Order } from '@/components/layout/Order';
 import { ReviewContent } from '@/components/layout/Reviews';
@@ -12,6 +13,7 @@ export default function Home() {
       <Connection />
       <Order />
       <ReviewContent />
+      <Faq />
     </main>
   );
 }
