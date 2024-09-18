@@ -131,6 +131,28 @@ const config: Config = {
             letterSpacing: '0.48px',
           },
         ],
+        bannerHeader: [
+          '1.56rem',
+          {
+            lineHeight: '40px',
+            letterSpacing: '0.64px',
+          },
+        ],
+        impact: [
+          '0.88rem',
+          {
+            lineHeight: '20px',
+            letterSpacing: '0.48px',
+          },
+        ],
+        impactBold: [
+          '1.38rem',
+          {
+            lineHeight: '20px',
+            letterSpacing: '0.32px',
+            fontWeight: 600,
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
@@ -167,6 +189,7 @@ const config: Config = {
         dot: '#C4C4C4',
         'connection-bg': '#F0EEEF',
         connection: '#6C6C6C',
+        infoText: '#2A2996',
       },
       height: {
         33: '132px',
