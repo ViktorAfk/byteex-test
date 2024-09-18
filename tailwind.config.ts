@@ -104,6 +104,22 @@ const config: Config = {
             fontWeight: 400,
           },
         ],
+        summary: [
+          '1.125rem',
+          {
+            lineHeight: '24px',
+            letterSpacing: '0.64px',
+            fontWeight: 400,
+          },
+        ],
+        answer: [
+          '0.94rem',
+          {
+            lineHeight: '22px',
+            fontWeight: 400,
+            letterSpacing: '0.48px',
+          },
+        ],
         header: '38px',
         medium: '15px',
       },
