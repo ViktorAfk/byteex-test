@@ -29,6 +29,7 @@
   .embla {
     max-width: 40rem;
     margin: auto;
+    --slide-height: 19rem;
   }
 
   .embla__viewport {
@@ -41,8 +42,14 @@
     gap: 1.5rem;
   }
   .embla__slide {
+    transform: translate3d(0, 0, 0);
     flex: 0 0 100%;
     min-width: fit-content;
+  }
+
+  .embla__slide__number {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    user-select: none;
   }
 
   .embla__dots {

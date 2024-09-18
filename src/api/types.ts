@@ -1,12 +1,10 @@
-interface Icon {
-  data: {
-    id: number;
-    attributes: {
-      name: string;
-      width: number;
-      height: number;
-      url: string;
-    };
+export interface ImageData {
+  id: number;
+  attributes: {
+    name: string;
+    width: number;
+    height: number;
+    url: string;
   };
 }
 
@@ -17,7 +15,9 @@ export interface HeroAdvantage {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
-    icon: Icon;
+    icon: {
+      data: ImageData;
+    };
   };
 }
 
@@ -35,7 +35,9 @@ export interface HeroReview {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
-    userIcon: Icon;
+    userIcon: {
+      data: ImageData;
+    };
   };
 }
 
@@ -56,7 +58,9 @@ export interface LoungeWear {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
-    picture: Icon;
+    picture: {
+      data: ImageData;
+    };
   };
 }
 
@@ -68,7 +72,9 @@ export interface LoungeWearAdvantages {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
-    advantageIcon: Icon;
+    advantageIcon: {
+      data: ImageData;
+    };
   };
 }
 
@@ -80,6 +86,32 @@ export interface OrderRule {
     createdAt: string;
     updatedAt: string;
     publishedAt: string;
-    orderIcon: Icon;
+    orderIcon: {
+      data: ImageData;
+    };
+  };
+}
+
+export interface UserContent {
+  id: number;
+  attributes: {
+    usersPictures: {
+      data: ImageData[];
+    };
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
+  };
+}
+
+export interface Review {
+  id: number;
+  attributes: {
+    customerName: string;
+    reviewText: string;
+    reviewRate: number;
+    createdAt: string;
+    updatedAt: string;
+    publishedAt: string;
   };
 }
