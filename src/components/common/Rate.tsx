@@ -2,12 +2,13 @@ import React from 'react';
 
 type Props = {
   rate: number;
+  classes?: string;
 };
 const arrayOfNumbers: number[] = [1, 2, 3, 4, 5];
 
-export const Rate: React.FC<Props> = ({ rate }) => {
+export const Rate: React.FC<Props> = ({ rate, classes = '' }) => {
   return (
-    <div className={'flex'}>
+    <div className={`flex ${classes}`}>
       {arrayOfNumbers.map((number) => {
         if (number <= rate) {
           return (

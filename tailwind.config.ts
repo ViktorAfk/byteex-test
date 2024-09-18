@@ -117,10 +117,14 @@ const config: Config = {
         18: '72px',
         19: '76px',
         bottom: '86px',
+        22: '88px',
         23: '92px',
+        27: '104px',
       },
       margin: {
+        left: 'calc(1rem * -1)',
         18: '72px',
+        19: '76px',
       },
       colors: {
         primary: '#01005B',
@@ -136,10 +140,13 @@ const config: Config = {
       },
       height: {
         33: '132px',
+        85: '340px',
+        91: '364px',
       },
       width: {
         89: '356px',
         104: '416px',
+        84: '336px',
       },
       borderRadius: {
         button: '5px',

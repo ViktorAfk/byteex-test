@@ -33,7 +33,7 @@ export default async function ReviewCard() {
         <div className={'flex flex-col-reverse lg:flex-row lg:gap-3'}>
           <p
             className={
-              'font-montserrat text-secondary text-medium leading-6 tracking-wider text-clip'
+              'font-montserrat text-secondary text-medium leading-6 tracking-wider'
             }
           >
             {userName}

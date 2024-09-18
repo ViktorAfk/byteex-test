@@ -1,9 +1,19 @@
+import { getUsersContentData } from '@/api/users-content';
 import React from 'react';
+import { ReviewContainer } from '../common/Container/ReviewContainer';
 import { Title } from '../common/Title';
+import { UsersContent } from '../common/UsersContent';
 
-export const ReviewContent: React.FC = () => {
+export const ReviewContent: React.FC = async () => {
+  const {
+    data: {
+      attributes: { usersPictures },
+    },
+  } = await getUsersContentData('api/users-content');
+  const { data: pictures } = usersPictures;
+
   return (
-    <section>
+    <section className={'pb-22 lg:pb-27'}>
       <div className={'container'}>
         <Title
           tag={'h2'}
@@ -26,6 +36,8 @@ export const ReviewContent: React.FC = () => {
           </p>
         </div>
       </div>
+      <UsersContent pictures={pictures} />
+      <ReviewContainer />
     </section>
   );
 };
