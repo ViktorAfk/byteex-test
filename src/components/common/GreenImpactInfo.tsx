@@ -5,12 +5,16 @@ import React from 'react';
 export const GreenImpactInfo: React.FC = () => {
   return (
     <div className={'flex justify-center'}>
-      <ul className={'flex flex-col w-full px-8 gap-10 md:flex-row md:px-0'}>
+      <ul
+        className={
+          'flex flex-col justify-center w-full px-8 gap-10 md:flex-row md:px-0'
+        }
+      >
         {bannerInfo.map(({ id, image, impotentStat, text }) => (
           <li
             key={id}
             className={
-              'flex flex-col gap-3 w-full items-center border-b pb-5 md:last:border-r-0 md:pr-10 md:border-r md:pb-2 md:border-b-0 border-[#C4C4C480]'
+              'flex flex-col gap-3 w-full items-center border-b pb-5 md:w-fit md:last:border-r-0 md:pr-10 md:border-r md:pb-2 md:border-b-0 border-[#C4C4C480]'
             }
           >
             <div
