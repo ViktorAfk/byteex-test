@@ -9,10 +9,21 @@ const config: Config = {
     extend: {
       animation: {
         scroll: 'scroll 20s linear 0s infinite',
+        fadeInDown: 'fadeInDown 1s ease-out',
       },
       keyframes: {
         scroll: {
           to: { transform: 'translateX(-50%)' },
+        },
+        fadeInDown: {
+          '0%': {
+            opacity: '0',
+            transform: 'translate3d(0, -100%, 0)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'none',
+          },
         },
       },
       fontFamily: {
@@ -126,6 +137,9 @@ const config: Config = {
       lineHeight: {
         header: '45px',
         mobile: '34px',
+      },
+      gap: {
+        22: '88px',
       },
       padding: {
         13: '52px',

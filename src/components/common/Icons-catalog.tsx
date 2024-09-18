@@ -6,8 +6,19 @@ const plusIcon = {
   viewBox: '0 0 19 19',
   title: 'Open answer for question',
 };
+
+const minusIcon = {
+  width: 15,
+  height: 2,
+  path: 'M0.272656 1.892H14.7487V0H0.272656V1.892Z',
+  fill: '#01005B',
+  viewBox: '0 0 15 2',
+  title: 'Close answer for question',
+};
+
 const iconsCollection = {
   plusIcon,
+  minusIcon,
 };
 
 export default iconsCollection;
