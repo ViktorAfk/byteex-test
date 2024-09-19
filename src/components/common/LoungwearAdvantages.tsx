@@ -1,8 +1,7 @@
-import { baseUrl } from '@/api/api';
 import { getLoungeWearAdvantagesData } from '@/api/loungewear-advantages';
 import Image from 'next/image';
 import React from 'react';
-import { NavigationButton } from './Button';
+import { NavigationButton } from './Buttons/Button';
 import { Rate } from './Rate';
 
 export default async function LoungeWearAdvantages() {
@@ -29,12 +28,7 @@ export default async function LoungeWearAdvantages() {
                     'w-11 h-11 flex justify-center items-center lg:self-start basis-11 bg-iconBackground rounded-full'
                   }
                 >
-                  <Image
-                    width={width}
-                    height={height}
-                    src={`${baseUrl}${url}`}
-                    alt={name}
-                  />
+                  <Image width={width} height={height} src={url} alt={name} />
                 </div>
                 <div className={'flex-1'}>
                   <h3

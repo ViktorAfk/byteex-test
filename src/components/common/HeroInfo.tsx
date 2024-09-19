@@ -1,4 +1,4 @@
-import { baseUrl, getStrapiData } from '@/api/api';
+import { getStrapiData } from '@/api/api';
 import Image from 'next/image';
 import React from 'react';
 
@@ -21,12 +21,7 @@ export default async function HeroInfo() {
                 'w-8 h-8 flex justify-center items-center basis-8 bg-iconBackground rounded-full'
               }
             >
-              <Image
-                src={`${baseUrl}${url}`}
-                width={width}
-                height={height}
-                alt={name}
-              />
+              <Image src={url} width={width} height={height} alt={name} />
             </div>
             <p
               className={

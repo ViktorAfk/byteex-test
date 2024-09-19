@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavigationButton } from './Button';
+import { NavigationButton } from './Buttons/Button';
 
 export const BeYourBest: React.FC = () => {
   return (

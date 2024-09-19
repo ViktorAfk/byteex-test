@@ -1,5 +1,4 @@
 'use client';
-import { baseUrl } from '@/api/api';
 import { LoungeWear } from '@/api/types';
 import clsx from 'clsx';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -53,7 +52,7 @@ export const LongWearCarousel: React.FC<Props> = ({ images }) => {
                 <div className={'embla__slide'} key={id}>
                   <Image
                     className={'max-h-dvh mb-3'}
-                    src={`${baseUrl}${url}`}
+                    src={url}
                     width={width}
                     height={height}
                     alt={name}
@@ -84,7 +83,7 @@ export const LongWearCarousel: React.FC<Props> = ({ images }) => {
               })}
             >
               <Image
-                src={`${baseUrl}${image.attributes.url}`}
+                src={image.attributes.url}
                 fill
                 objectFit={'cover'}
                 alt={image.attributes.name}

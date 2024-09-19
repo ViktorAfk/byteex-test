@@ -1,5 +1,4 @@
 'use client';
-import { baseUrl } from '@/api/api';
 import { ImageData } from '@/api/types';
 import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
@@ -22,7 +21,7 @@ export const UsersContent: React.FC<Props> = ({ pictures }) => {
         {pictures.map(({ id, attributes }) => (
           <div key={id}>
             <Image
-              src={`${baseUrl}${attributes.url}`}
+              src={attributes.url}
               width={attributes.width}
               height={attributes.height}
               alt={"user's picture in our cloth"}

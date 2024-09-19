@@ -1,4 +1,3 @@
-import { baseUrl } from '@/api/api';
 import { getReviewData } from '@/api/hero-review';
 import Image from 'next/image';
 import React from 'react';
@@ -24,12 +23,7 @@ export default async function ReviewCard() {
       }
     >
       <div className={'flex gap-3 mb-3 items-center w-full'}>
-        <Image
-          width={39}
-          height={39}
-          src={`${baseUrl}${url}`}
-          alt={imageName}
-        />
+        <Image width={39} height={39} src={url} alt={imageName} />
         <div className={'flex flex-col-reverse lg:flex-row lg:gap-3'}>
           <p
             className={

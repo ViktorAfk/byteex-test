@@ -1,12 +1,12 @@
-import { arrowIcon } from './Icons';
-import { SvgIcon } from './SvgIcon';
+import iconCollection from '../Icons/Icons-catalog';
+import { SvgIcon } from '../Icons/SvgIcon';
 
 type Props = {
   text: string;
   classes?: string;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const { height, width, fill, title, path, viewBox } = arrowIcon;
+const { height, width, fill, title, path, viewBox } = iconCollection.arrowIcon;
 
 export const NavigationButton: React.FC<Props> = ({
   text,

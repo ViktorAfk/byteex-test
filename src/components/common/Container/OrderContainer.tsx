@@ -1,6 +1,6 @@
 import { getOrderRulesData } from '@/api/order-rules';
 import React from 'react';
-import { ButtonAndRate } from '../ButtonAndRate';
+import { ButtonAndRate } from '../Buttons/ButtonAndRate';
 import { Title } from '../Title';
 import { OrderCarousel } from '../embla/OrderSteps/OrderCarousel';
 
@@ -20,7 +20,7 @@ export default async function OrderContainer() {
       <div className={'mb-10 lg:mb-14 xl:flex xl:justify-center'}>
         <OrderCarousel steps={orderSteps} />
       </div>
-      <ButtonAndRate />
+      <ButtonAndRate buttonClasses={'lg:w-92'} />
     </div>
   );
 }

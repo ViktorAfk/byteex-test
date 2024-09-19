@@ -1,6 +1,6 @@
 import { getCustomersReviewsData } from '@/api/customer-reviews';
 import React from 'react';
-import { ButtonAndRate } from '../ButtonAndRate';
+import { ButtonAndRate } from '../Buttons/ButtonAndRate';
 import { ReviewsCarousel } from '../embla/Reviews/ReviewsCarousel';
 
 export const ReviewContainer: React.FC = async () => {
@@ -9,7 +9,9 @@ export const ReviewContainer: React.FC = async () => {
   return (
     <div className={'container lg:pr-10 lg:px-18 xl:px-27'}>
       <ReviewsCarousel reviews={reviews} />
-      <ButtonAndRate />
+      <div className={'flex justify-center'}>
+        <ButtonAndRate buttonClasses={'lg:w-92'} />
+      </div>
     </div>
   );
 };
