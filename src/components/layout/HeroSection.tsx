@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import { NavigationButton } from '../common/Button';
+import { NavigationButton } from '../common/Buttons/Button';
 import HeroInfo from '../common/HeroInfo';
 import { MainImage } from '../common/MainImage';
 import ReviewCard from '../common/ReviewCard';

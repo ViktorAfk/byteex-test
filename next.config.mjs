@@ -3,13 +3,12 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '1337',
-        pathname: '/uploads/**',
+        protocol: 'https',
+        hostname: 'magical-growth-da5c53b87d.media.strapiapp.com',
+        port: '',
+        pathname: '/**',
       },
     ],
   },
 };
-
 export default nextConfig;

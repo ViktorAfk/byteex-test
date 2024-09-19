@@ -1,8 +1,8 @@
 import { getFaqData } from '@/api/faq';
 import React from 'react';
-import { ButtonAndRate } from './ButtonAndRate';
-import iconsCollection from './Icons-catalog';
-import { SvgIcon } from './SvgIcon';
+import { ButtonAndRate } from './Buttons/ButtonAndRate';
+import iconsCollection from './Icons/Icons-catalog';
+import { SvgIcon } from './Icons/SvgIcon';
 import { Title } from './Title';
 const { plusIcon, minusIcon } = iconsCollection;
 

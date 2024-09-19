@@ -1,6 +1,6 @@
 import { getCustomersReviewsData } from '@/api/customer-reviews';
 import React from 'react';
-import { ButtonAndRate } from '../ButtonAndRate';
+import { ButtonAndRate } from '../Buttons/ButtonAndRate';
 import { ReviewsCarousel } from '../embla/Reviews/ReviewsCarousel';
 
 export const ReviewContainer: React.FC = async () => {

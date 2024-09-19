@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
-import { ButtonAndRate } from '../common/ButtonAndRate';
-import { FooterButton } from '../common/FooterButton';
+import { ButtonAndRate } from '../common/Buttons/ButtonAndRate';
+import { FooterButton } from '../common/Buttons/FooterButton';
 import { FooterInfo } from '../common/FooterInfo';
 import { Title } from '../common/Title';
 

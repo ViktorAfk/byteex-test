@@ -1,6 +1,6 @@
 import React from 'react';
+import { Rate } from '../Rate';
 import { NavigationButton } from './Button';
-import { Rate } from './Rate';
 
 type Props = {
   classes?: string;

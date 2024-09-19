@@ -1,6 +1,6 @@
 import { getOrderRulesData } from '@/api/order-rules';
 import React from 'react';
-import { ButtonAndRate } from '../ButtonAndRate';
+import { ButtonAndRate } from '../Buttons/ButtonAndRate';
 import { Title } from '../Title';
 import { OrderCarousel } from '../embla/OrderSteps/OrderCarousel';
 

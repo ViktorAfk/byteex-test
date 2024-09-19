@@ -1,4 +1,3 @@
-import { baseUrl } from '@/api/api';
 import clsx from 'clsx';
 import Image from 'next/image';
 import React from 'react';
@@ -33,12 +32,7 @@ export const OrderCard: React.FC<Props> = ({
         },
       )}
     >
-      <Image
-        width={width}
-        height={height}
-        src={`${baseUrl}${imageUrl}`}
-        alt={imgInfo}
-      />
+      <Image width={width} height={height} src={imageUrl} alt={imgInfo} />
       <Title
         tag={'h3'}
         className={

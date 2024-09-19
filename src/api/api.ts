@@ -1,7 +1,7 @@
 import qs from 'qs';
 import { ApiResponse, HeroAdvantage } from './types';
 
-export const baseUrl = 'http://localhost:1337';
+export const baseUrl = process.env.API_URL;
 
 const heroScreenQuery = qs.stringify({
   populate: {
