@@ -175,6 +175,7 @@ const config: Config = {
       },
       margin: {
         left: 'calc(1rem * -1)',
+        13: '52px',
         18: '72px',
         19: '76px',
       },
@@ -198,6 +199,7 @@ const config: Config = {
       },
       width: {
         89: '356px',
+        92: '368px',
         104: '416px',
         84: '336px',
       },
