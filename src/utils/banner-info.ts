@@ -13,7 +13,7 @@ export const bannerInfo = [
   {
     id: 2,
     image: {
-      url: '/H2o.svg',
+      url: '/H2O.svg',
       width: 24,
       height: 31,
       imageInfo: 'water icon',
