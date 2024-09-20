@@ -1,10 +1,10 @@
 import { getUsersContentData } from '@/api/users-content';
 import React from 'react';
-import { ReviewContainer } from '../common/Container/ReviewContainer';
+import ReviewContainer from '../common/Container/ReviewContainer';
 import { Title } from '../common/Title';
 import { UsersContent } from '../common/UsersContent';
 
-export const ReviewContent: React.FC = async () => {
+export default async function ReviewContent() {
   const {
     data: {
       attributes: { usersPictures },
@@ -40,4 +40,4 @@ export const ReviewContent: React.FC = async () => {
       <ReviewContainer />
     </section>
   );
-};
+}

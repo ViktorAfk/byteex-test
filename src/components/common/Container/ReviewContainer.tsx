@@ -3,7 +3,7 @@ import React from 'react';
 import { ButtonAndRate } from '../Buttons/ButtonAndRate';
 import { ReviewsCarousel } from '../embla/Reviews/ReviewsCarousel';
 
-export const ReviewContainer: React.FC = async () => {
+export default async function ReviewContainer() {
   const { data: reviews } = await getCustomersReviewsData('api/reviews');
 
   return (
@@ -14,4 +14,4 @@ export const ReviewContainer: React.FC = async () => {
       </div>
     </div>
   );
-};
+}
