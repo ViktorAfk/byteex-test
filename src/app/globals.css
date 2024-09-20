@@ -2,32 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    
+  .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+  }
+
+ 
   }
 }
+
+@layer components {
+  .benefits {
+    background: linear-gradient(180deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+  }
+  
+  .footer {
+    background: linear-gradient(360deg, #F9F0E5 0%, rgba(249, 240, 229, 0.18) 43.05%, rgba(249, 240, 229, 0) 100%);
+  }
+
+  .wave {
+    background-image: url('/Vector\ 88\ \(1\).svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .embla {
+    max-width: 40rem;
+    margin: auto;
+    --slide-height: 19rem;
+  }
+
+  .embla__viewport {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .embla__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 100%;
+    min-width: fit-content;
+  }
+
+  .embla__slide__number {
+    box-shadow: inset 0 0 0 0.2rem var(--detail-medium-contrast);
+    user-select: none;
+  }
+
+  .embla__dots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 
+
+
+

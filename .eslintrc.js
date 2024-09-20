@@ -1,5 +1,5 @@
 module.exports = {
-  ignorePatterns: ['next.config.mjs', 'postcss.config.mjs', 'environment.d.ts', '.next'],
+  ignorePatterns: ['next.config.mjs', 'env.d.ts' 'postcss.config.mjs', 'environment.d.ts', '.next'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -44,7 +44,6 @@ module.exports = {
           'error',
           process.platform === 'win32' ? 'windows' : 'unix',
         ],
-        'import/no-default-export': ['warn'],
         'import/no-cycle': ['warn'],
         'import/prefer-default-export': 'off',
         semi: ['error', 'always'],
