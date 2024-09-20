@@ -1,6 +1,4 @@
-'use client';
 import { ImageData } from '@/api/types';
-import useEmblaCarousel from 'embla-carousel-react';
 import Image from 'next/image';
 import React from 'react';
 
@@ -9,8 +7,6 @@ type Props = {
 };
 
 export const UsersContent: React.FC<Props> = ({ pictures }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
-
   return (
     <div>
       <div
