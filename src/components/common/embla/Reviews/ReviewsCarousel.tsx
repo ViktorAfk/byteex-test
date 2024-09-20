@@ -154,7 +154,7 @@ export const ReviewsCarousel: React.FC<Props> = ({ reviews }) => {
                   key={snap}
                   onClick={() => onDotButtonClick(index)}
                   className={clsx('w-2 h-2 rounded-full bg-dot', {
-                    '!bg-black': index === selectedIndex,
+                    '!embla-dot--active': index === selectedIndex,
                   })}
                 />
               );
