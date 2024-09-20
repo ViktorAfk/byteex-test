@@ -23,4 +23,4 @@ Technical Considerations:
  • TailwindCSS for styling and Embla Carousel for slider animations.
  • For backend purposes I used strapi-cms.
 
- - [DEMO LINK]() 
+ - [DEMO LINK](https://byteex-test.vercel.app/) 
